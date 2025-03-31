@@ -1,4 +1,4 @@
-# SAF
+# SAF(Ruby Windows General Purpose Application Framework)
 - 由Ruby言语为主进行程序逻辑控制的Windows平台下通用桌面应用程序框架
 - 支持在无源码、仅依靠文档和Demo的情况下可持续、递进式依葫芦画瓢地进行深度定制开发
 - 目标是一个基本五脏俱全的可直接运行的通用程序，使用者可根据自己的需求在许可证权利授权下进行二次定制开发
