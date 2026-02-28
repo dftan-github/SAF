@@ -68,7 +68,7 @@
 - Cmd(所有命令的基类，程序运行过程中可以根据程序逻辑需要生成多个基于Cmd的类对象，当前活动的Cmd会优先接管键盘、鼠标等事件，自己不处理再在Cmd队列中逐级传递->App->控件)
 - Entity(所有图元类的基类，比如EntityPos,EntityLine,EntityArc,EntityCircle)
 
-#扩展示例
+# 扩展示例
 <img width="1362" height="609" alt="image" src="https://github.com/user-attachments/assets/335dccb4-6395-40d6-bc6f-382a1db95839" />
 
 # 期望
