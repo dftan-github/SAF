@@ -73,11 +73,9 @@
   现在假定你需要新增除了标准线段之外，在线段的起点和终点各画一条垂直于标准线的垂直线（这个功能在测量行业叫卡尺功能）
   需要实现这个功能，你只需在对应的目录下新建一个EntityLine.rb的文件，内容如下就可以了，其它的你都不需要做了
 
-```ruby {.line-numbers}
+```ruby {.line-numbers=true}
 module SAF
-  
   class EntityLine  
- 
     alias_method :saf_auto, :update_entity
     def update_entity(win)
       auto_super(win)
