@@ -70,6 +70,26 @@
 
 # 扩展示例
 <img width="1362" height="609" alt="image" src="https://github.com/user-attachments/assets/335dccb4-6395-40d6-bc6f-382a1db95839" />
+```ruby
+#比如说你有一个基于SAF的现成的软件（就当是windows下的小画家）之前的画线就是显示一条标准的线段
+#现在假定你需要新增除了标准线段之外，在线段的起点和终点各画一条垂直于标准线的垂直线（这个功能在测量行业叫卡尺功能）
+#需要实现这个功能，你只需在对应的目录下新建一个EntityLine.rb的文件，内容如下就可以了，其它的你都不需要做了
+module SAF
+  
+  class EntityLine  
+ 
+    alias_method :saf_auto, :update_entity
+    def update_entity(win)
+      auto_super(win)
+
+      primitives.xxx(vertex_format_name: :vnt, draw_type: ::GL::LINES){ 
+        #这里的xxx是你自定义的有效的名称（代表新的绘制内容)
+      __.ebos.val=[] #在这里按顶点着色器格式填入draw_type对应的两条垂直线的顶点数据就行
+     
+    }
+    end
+  end
+end
 
 # 期望
 - 达到桌面版的ROR,让更多的编程爱好者有可用的好工具进行多种应用场景的桌面应用开发 
